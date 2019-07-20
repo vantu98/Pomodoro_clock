@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tomato Clock</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="clock">
+      <div class="countdown">
+        <span id="min">00</span>
+        <span>:</span>
+        <span id="sec">00</span>
+      </div>
+      <div class="box">
+        <button class="btn" id="tomato" onclick="doTomato(24,59)">
+          Tomato
+        </button>
+        <button class="btn" id="short-break" onclick="doTomato(4,59)">
+          Short Break
+        </button>
+        <button class="btn" id="long-break" onclick="doTomato(9,59)">
+          Long Break
+        </button>
+        <button class="btn" id="reset" onclick="setDefault()">Reset</button>
+      </div>
+    </div>
+
+    <footer>
+        <p>Written by Nguyen Van Tu, no copyright required &copy;</p>
+    </footer>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
